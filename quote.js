@@ -2,6 +2,7 @@ var endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
 
 function getQuote() {
     fetch(endpoint)
+    //.then is a promise that after we fetch this end point we'll run this function
       .then(function (response) {
         return response.json();
       })
